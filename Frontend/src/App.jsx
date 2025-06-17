@@ -20,7 +20,7 @@ function App() {
   });
 
   async function codeReview() {
-    const response = await axios.post('http://localhost:3000/ai/get-review', { code })
+    const response = await axios.post('https://backend-production-ee75a.up.railway.app/ai/get-review', { code })
     setReview(response.data);
   }
   return (
